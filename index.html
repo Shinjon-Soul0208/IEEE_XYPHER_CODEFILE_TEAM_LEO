@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Integrity Review Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Submission Integrity Checker</h1>
+    <p>Paste a student submission below to analyze for AI-generated or ghostwritten content.</p>
+    
+    <form id="submissionForm">
+      <textarea name="submission" placeholder="Paste student submission here..." required></textarea>
+      <button type="submit">🔍 Analyze Submission</button>
+    </form>
+
+    <div id="result" class="result-box hidden">
+      <h2>📊 Analysis Result</h2>
+      <p><strong>Flagged:</strong> <span id="flagged"></span></p>
+      <p><strong>Confidence Score:</strong> <span id="confidence"></span></p>
+      <p><strong>Reason:</strong> <span id="reason"></span></p>
+      <p><strong>Highlighted Excerpt:</strong> <span id="highlight"></span></p>
+      <p><strong>Suggested Follow-up:</strong> <span id="suggestion"></span></p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
